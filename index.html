@@ -152,17 +152,17 @@ section{scroll-margin-top:90px}
 
 /* Partners */
 .partners{background:var(--bg-soft);padding:96px 0}
-.p-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.p-grid{display:grid;grid-template-columns:1fr;gap:32px}
 .partner{background:#fff;border-radius:16px;overflow:hidden;display:flex;gap:0;box-shadow:0 20px 40px -30px rgba(15,36,64,.5);transition:transform .25s,box-shadow .25s}
 .partner:hover{transform:translateY(-4px);box-shadow:0 26px 50px -28px rgba(15,36,64,.6)}
-.partner img{width:clamp(200px,42%,300px);height:auto;min-height:100%;object-fit:cover;object-position:top;flex:none;display:block;background:#1a1a1a}
+.partner img{width:clamp(200px,30%,320px);height:auto;min-height:100%;object-fit:cover;object-position:top;flex:none;display:block;background:#1a1a1a}
 .p-body{flex:1;align-self:center}
-.p-body{padding:28px 26px}
+.p-body{padding:36px 44px}
 .p-body h3{font-size:22px;font-weight:700;color:var(--navy)}
 .role{color:var(--blue);font-weight:600;font-size:14px;margin:4px 0 12px}
 .p-body p{margin:0;color:var(--muted);font-size:15.5px}
 @media (max-width:900px){.p-grid{grid-template-columns:1fr}}
-@media (max-width:560px){.partner{flex-direction:column}.partner img{width:100%;min-height:0;height:360px;max-height:none;object-position:top}.p-body{align-self:stretch}}
+@media (max-width:560px){.p-body{padding:28px 24px}.partner{flex-direction:column}.partner img{width:100%;min-height:0;height:360px;max-height:none;object-position:top}.p-body{align-self:stretch}}
 
 /* Process */
 .process{background:var(--bg-soft);padding:96px 0}
@@ -294,6 +294,10 @@ footer div{text-align:justify}
 
 
 
+
+
+
+
 /* Language switcher */
 .lang{display:inline-flex;align-items:center;gap:2px;margin-inline-start:10px;padding:3px;border:1px solid var(--line);border-radius:999px}
 .lang a{font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px;color:var(--navy-2);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
@@ -378,7 +382,7 @@ footer div{text-align:justify}
   <div class="wrap">
     <div class="intro-text" data-reveal>
       <div class="eyebrow">אודות המשרד</div>
-      <h2>ניסיון של למעלה מ־25 שנה, מקצועיות ללא פשרות וליווי אישי</h2>
+      <h2>ניסיון של למעלה מ־⁠25 שנה, מקצועיות ללא פשרות וליווי אישי</h2>
       <p>ארבל ושות׳ נוסד בשנת 2010 על ידי רו״ח דוד ארבל, ומאז 2012 מנוהל בשותפות עם רו״ח שרון ארבל. לאורך השנים בנה המשרד מוניטין של שותף פיננסי אמין לחברות, לעסקים וליחידים — כזה שמשלב ידע מקצועי מעמיק, תשומת לב לכל פרט וזמינות אמיתית ללקוח.</p>
       <p>המשרד מעניק מעטפת מקצועית מלאה: ביקורת דוחות כספיים, חשבות, הנהלת חשבונות ושכר, ייעוץ ותכנון מס, הליכי גילוי מרצון, ליווי עסקי וחוות דעת מקצועיות — לחברות ולעסקים קטנים ובינוניים בישראל ובחו״ל, ולאנשים פרטיים.</p>
       <p>בזכות ניסיון רב בליווי תושבי חוץ, עולים חדשים והקהילה דוברת הצרפתית, אנו מעניקים שירות מלא באנגלית ובצרפתית — ומגשרים בביטחון בין מערכות מס ודיווח שונות.</p>
@@ -458,7 +462,7 @@ footer div{text-align:justify}
     </div>
     <div class="why-grid">
       <div class="why-item" data-reveal style="--d:0.0s"><h3>אמינות</h3><p>עבודה לפי כללי האתיקה המקצועית ותקני החשבונאות המחמירים ביותר — ללא קיצורי דרך.</p></div>
-      <div class="why-item" data-reveal style="--d:0.1s"><h3>ניסיון</h3><p>משרד הפועל מאז 2010, ושותפים בעלי ניסיון של למעלה מ־25 שנה בחברות פרטיות, ציבוריות ובינלאומיות.</p></div>
+      <div class="why-item" data-reveal style="--d:0.1s"><h3>ניסיון</h3><p>משרד הפועל מאז 2010, ושותפים בעלי ניסיון של למעלה מ־⁠25 שנה בחברות פרטיות, ציבוריות ובינלאומיות.</p></div>
       <div class="why-item" data-reveal style="--d:0.2s"><h3>דיסקרטיות</h3><p>שמירה קפדנית על סודיות המידע העסקי והאישי — ערך יסוד בכל תיק שאנו מטפלים בו.</p></div>
       <div class="why-item" data-reveal style="--d:0.3s"><h3>עברית, אנגלית וצרפתית</h3><p>שירות מקצועי מלא באנגלית ובצרפתית — לתושבי חוץ, לעולים חדשים, למשקיעים זרים ולקהילה דוברת הצרפתית.</p></div>
     </div>
@@ -474,7 +478,7 @@ footer div{text-align:justify}
         <div class="p-body">
           <h3>שרון ארבל, רו״ח</h3>
           <div class="role">שותפה מנהלת</div>
-          <p>בוגרת לימודי חשבונאות במכללת רמת גן, ובעלת ניסיון של למעלה מ־25 שנה בתחום הכספים והחשבונאות בחברות פרטיות, ציבוריות ובינלאומיות מובילות, לרבות ניהול צוותי ביקורת. מאז 2012 משמשת שותפה מנהלת במשרד. שרון משלבת מקצועיות בלתי מתפשרת עם יחסי אנוש מצוינים, ומקפידה על סטנדרט עבודה גבוה ועל קשר אישי וקרוב עם כל לקוח.</p>
+          <p>בוגרת לימודי חשבונאות במכללת רמת גן, ובעלת ניסיון של למעלה מ־⁠25 שנה בתחום הכספים והחשבונאות בחברות פרטיות, ציבוריות ובינלאומיות מובילות, לרבות ניהול צוותי ביקורת. מאז 2012 משמשת שותפה מנהלת במשרד. שרון משלבת מקצועיות בלתי מתפשרת עם יחסי אנוש מצוינים, ומקפידה על סטנדרט עבודה גבוה ועל קשר אישי וקרוב עם כל לקוח.</p>
         </div>
       </article>
       <article class="partner" data-reveal="left" style="--d:.15s">
@@ -482,7 +486,7 @@ footer div{text-align:justify}
         <div class="p-body">
           <h3>דוד ארבל, רו״ח</h3>
           <div class="role">מייסד ושותף</div>
-          <p>בוגר כלכלה מאוניברסיטת בר־אילן וחשבונאות מהמסלול האקדמי של המכללה למינהל. ייסד את המשרד בשנת 2010, ומוביל את תחומי הביקורת, המיסוי והמיסוי הבינלאומי. בעל ניסיון בינלאומי רב בליווי לקוחות בכל הנוגע להכנסות מחו״ל, אמנות מס ודיווח בין־מדינתי. בזכות רקע בנקאי עשיר, מתמחה בליווי עסקים בקבלת אשראי בערבות המדינה. דובר צרפתית ברמת שפת אם, ומלווה תושבי חוץ ואת הקהילה דוברת הצרפתית בישראל.</p>
+          <p>בוגר כלכלה מאוניברסיטת בר־⁠אילן וחשבונאות מהמסלול האקדמי של המכללה למינהל. ייסד את המשרד בשנת 2010, ומוביל את תחומי הביקורת, המיסוי והמיסוי הבינלאומי. בעל ניסיון בינלאומי רב בליווי לקוחות בכל הנוגע להכנסות מחו״ל, אמנות מס ודיווח בין־⁠מדינתי. בזכות רקע בנקאי עשיר, מתמחה בליווי עסקים בקבלת אשראי בערבות המדינה. דובר צרפתית ברמת שפת אם, ומלווה תושבי חוץ ואת הקהילה דוברת הצרפתית בישראל.</p>
         </div>
       </article>
     </div>
@@ -516,8 +520,8 @@ footer div{text-align:justify}
       <div class="map-bar">
         <div><div class="mb-t">מגדל ב.ס.ר. 4, קומה 4</div><div class="mb-s">רח׳ מצדה 7, בני ברק</div></div>
         <div class="mb-btns">
-          <a class="pill pill-navy sm" href="https://www.google.com/maps/search/?api=1&amp;query=32.09349%2C34.82449" target="_blank" rel="noopener">פתיחה ב־Google Maps</a>
-          <a class="pill pill-outline sm" href="https://waze.com/ul?ll=32.09349%2C34.82449&amp;navigate=yes" target="_blank" rel="noopener">ניווט ב־Waze</a>
+          <a class="pill pill-navy sm" href="https://www.google.com/maps/search/?api=1&amp;query=32.09349%2C34.82449" target="_blank" rel="noopener">פתיחה ב־⁠Google Maps</a>
+          <a class="pill pill-outline sm" href="https://waze.com/ul?ll=32.09349%2C34.82449&amp;navigate=yes" target="_blank" rel="noopener">ניווט ב־⁠Waze</a>
         </div>
       </div>
     </div>
