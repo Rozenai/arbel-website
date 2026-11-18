@@ -311,10 +311,14 @@ footer div{text-align:justify}
 
 
 /* logo subtitle */
-.logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none}
-.logo-sub{font-size:12px;font-weight:500;letter-spacing:0;color:var(--navy);line-height:1;margin-top:2px;white-space:nowrap}
-html[dir=ltr] .logo-sub{font-size:11px;letter-spacing:.05em}
-@media (max-width:480px){.logo-sub{font-size:10px}}
+.logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;flex:none}
+.logo-sub{font-size:12px;font-weight:500;color:var(--navy);line-height:1;margin-top:2px;white-space:nowrap}
+html[dir=ltr] .logo-sub{font-size:10.5px;letter-spacing:.04em}
+@media (max-width:1200px){html[dir=ltr] .logo-sub{white-space:normal;max-width:100px;text-align:center;line-height:1.15;letter-spacing:0}}
+@media (min-width:901px) and (max-width:1100px){.nav a{padding:10px 6px;font-size:13.5px}.nav .pill{padding:0 14px;margin-inline-start:6px}}
+@media (max-width:480px){.logo-sub{font-size:10px}html[dir=ltr] .logo-sub{white-space:normal;max-width:84px;text-align:center;font-size:9px;line-height:1.15;letter-spacing:0}}
+
+
 
 
 
@@ -348,7 +352,7 @@ p,li{-webkit-hyphens:auto;hyphens:auto}
 
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Arbel &amp; Co. CPAs – back to top"><img src="logo.png" alt="Arbel &amp; Co. CPAs – logo"><span class="logo-sub">CPAs</span></a>
+    <a class="logo" href="#top" aria-label="Arbel &amp; Co. CPAs – back to top"><img src="logo.png" alt="Arbel &amp; Co. CPAs – logo"><span class="logo-sub">Certified Public Accountants</span></a>
     <div class="lang lang-m" role="group" aria-label="Language / שפה / Langue"><a href="index.html?v=20261118" lang="he" hreflang="he" data-nav>עברית</a><a href="en.html?v=20261118" lang="en" hreflang="en" data-nav aria-current="true">English</a><a href="fr.html?v=20261118" lang="fr" hreflang="fr" data-nav>Français</a></div>
     <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainnav">
       <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
