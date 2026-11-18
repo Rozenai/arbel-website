@@ -263,13 +263,16 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 
 
 
+
+
 /* Language switcher */
 .lang{display:inline-flex;align-items:center;gap:2px;margin-inline-start:10px;padding:3px;border:1px solid var(--line);border-radius:999px}
 .lang a{font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px;color:var(--navy-2);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
 .lang a:hover{background:var(--bg-soft)}
 .lang a[aria-current="true"]{background:var(--navy-2);color:#fff}
 .lang-m{display:none}
-@media (max-width:900px){.nav .lang{display:none}.lang-m{display:inline-flex;margin:0 0 0 0;margin-inline-start:auto}.hdr .wrap{gap:12px}}
+@media (max-width:900px){.nav .lang{display:none}.lang-m{display:inline-flex;margin:0 0 0 0;margin-inline-start:auto}.hdr .wrap{gap:10px}}
+@media (max-width:480px){.lang-m a{font-size:12px;padding:6px 8px}.hdr .logo img{height:50px}}
 /* end switcher */
 
 .credit{opacity:.85}
@@ -282,7 +285,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 <header class="hdr" id="hdr">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="ארבל ושות׳ – לראש הדף"><img src="logo.png" alt="ארבל ושות׳ – לוגו"></a>
-    <div class="lang lang-m" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav aria-current="true">עב</a><a href="en.html" lang="en" hreflang="en" data-nav>EN</a><a href="fr.html" lang="fr" hreflang="fr" data-nav>FR</a></div>
+    <div class="lang lang-m" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav aria-current="true">עברית</a><a href="en.html" lang="en" hreflang="en" data-nav>English</a><a href="fr.html" lang="fr" hreflang="fr" data-nav>Français</a></div>
     <button class="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mainnav">
       <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -293,7 +296,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
       <a href="#partners">שותפים</a>
       <a href="#contact">צור קשר</a>
       <a class="pill pill-outline" href="#contact">פגישת ייעוץ</a>
-      <div class="lang" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav aria-current="true">עב</a><a href="en.html" lang="en" hreflang="en" data-nav>EN</a><a href="fr.html" lang="fr" hreflang="fr" data-nav>FR</a></div>
+      <div class="lang" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav aria-current="true">עברית</a><a href="en.html" lang="en" hreflang="en" data-nav>English</a><a href="fr.html" lang="fr" hreflang="fr" data-nav>Français</a></div>
       
       
       
