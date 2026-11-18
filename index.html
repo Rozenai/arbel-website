@@ -308,6 +308,16 @@ footer div{text-align:justify}
 
 
 
+
+
+/* logo subtitle */
+.logo{display:inline-flex;flex-direction:column;align-items:center;text-decoration:none}
+.logo-sub{font-size:12px;font-weight:500;letter-spacing:0;color:var(--navy);line-height:1;margin-top:2px;white-space:nowrap}
+html[dir=ltr] .logo-sub{font-size:11px;letter-spacing:.05em}
+@media (max-width:480px){.logo-sub{font-size:10px}}
+
+
+
 /* Language switcher */
 .lang{display:inline-flex;align-items:center;gap:2px;margin-inline-start:10px;padding:3px;border:1px solid var(--line);border-radius:999px}
 .lang a{font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px;color:var(--navy-2);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
@@ -327,7 +337,7 @@ footer div{text-align:justify}
 
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="ארבל ושות׳ רואי חשבון – לראש הדף"><img src="logo.png" alt="ארבל ושות׳ רואי חשבון – לוגו"></a>
+    <a class="logo" href="#top" aria-label="ארבל ושות׳ רואי חשבון – לראש הדף"><img src="logo.png" alt="ארבל ושות׳ רואי חשבון – לוגו"><span class="logo-sub">רואי חשבון</span></a>
     <div class="lang lang-m" role="group" aria-label="Language / שפה / Langue"><a href="index.html?v=20261118" lang="he" hreflang="he" data-nav aria-current="true">עברית</a><a href="en.html?v=20261118" lang="en" hreflang="en" data-nav>English</a><a href="fr.html?v=20261118" lang="fr" hreflang="fr" data-nav>Français</a></div>
     <button class="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mainnav">
       <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
