@@ -260,6 +260,10 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 
 
 
+
+
+
+
 /* LTR overrides */
 .progress{transform-origin:left}
 .hero-bg{background:
@@ -274,7 +278,9 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 .lang a{font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px;color:var(--navy-2);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
 .lang a:hover{background:var(--bg-soft)}
 .lang a[aria-current="true"]{background:var(--navy-2);color:#fff}
-@media (max-width:900px){.lang{align-self:flex-start;margin:10px 0 0}}
+.lang-m{display:none}
+@media (max-width:900px){.nav .lang{display:none}.lang-m{display:inline-flex;margin:0 0 0 0;margin-inline-start:auto}.hdr .wrap{gap:12px}}
+/* end switcher */
 
 .credit{opacity:.85}
 .ftr .bottom a.credit-link{margin:0;color:#8EC0EA;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(142,192,234,.4)}
@@ -286,6 +292,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 <header class="hdr" id="hdr">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Arbel &amp; Co. – retour en haut"><img src="logo.png" alt="Arbel &amp; Co. – logo"></a>
+    <div class="lang lang-m" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav>עב</a><a href="en.html" lang="en" hreflang="en" data-nav>EN</a><a href="fr.html" lang="fr" hreflang="fr" data-nav aria-current="true">FR</a></div>
     <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainnav">
       <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -297,7 +304,6 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
       <a href="#contact">Contact</a>
       <a class="pill pill-outline" href="#contact">Rendez-vous</a>
       <div class="lang" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav>עב</a><a href="en.html" lang="en" hreflang="en" data-nav>EN</a><a href="fr.html" lang="fr" hreflang="fr" data-nav aria-current="true">FR</a></div>
-      
       
       
       
@@ -338,7 +344,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
     <div class="wrap">
     <div class="hero-kicker">Arbel &amp; Co. · Experts-comptables</div>
     <h1>Expertise comptable, fiscalité<br>et conseil aux entreprises</h1>
-    <p>Un cabinet d'expertise comptable à taille humaine — audit, fiscalité et conseil — fondé sur une connaissance approfondie de nos clients et de leurs besoins. Service en hébreu, en anglais et en français.</p>
+    <p>Un cabinet d'expertise comptable professionnel — audit, fiscalité et conseil — fondé sur une connaissance approfondie de nos clients et de leurs besoins. Service en hébreu, en anglais et en français.</p>
     <div class="hero-ctas">
       <a class="pill pill-sky" href="#contact">Prendre rendez-vous</a>
       <a class="pill pill-ghost" href="tel:+972546656745" dir="ltr"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> 054-6656745</a>
@@ -350,7 +356,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
   <div class="wrap">
     <div class="intro-text" data-reveal>
       <div class="eyebrow">Le cabinet</div>
-      <h2>Arbel &amp; Co. – Un cabinet à taille humaine</h2>
+      <h2>Arbel &amp; Co. – Un cabinet d'expertise comptable professionnel</h2>
       <p>Arbel &amp; Co. est un cabinet d'expertise comptable fondé en 2012 par David Arbel, expert-comptable, et dirigé depuis 2014 en association avec Sharon Arbel, expert-comptable. Notre équipe allie une exigence professionnelle sans compromis à un accompagnement personnel et de confiance, fondé sur une connaissance approfondie de chaque client et de ses besoins.</p>
       <p>Le cabinet propose l'audit, le contrôle de gestion, la tenue de comptabilité et la paie, l'accompagnement des entreprises, le conseil et la planification fiscale, la régularisation volontaire et des avis professionnels — pour les sociétés et les PME en Israël et à l'étranger, ainsi que pour les particuliers.</p>
       <p>Le cabinet possède une grande expérience de l'accompagnement des non-résidents, des nouveaux immigrants et de la communauté francophone en Israël, avec un service complet en anglais et en français.</p>
@@ -425,7 +431,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
     <div class="why-head" data-reveal="right">
       <div class="eyebrow">Pourquoi Arbel &amp; Co.</div>
       <h2>Un professionnalisme sans compromis, une attention personnelle pour chaque client</h2>
-      <p>En tant que cabinet à taille humaine, chaque client bénéficie d'un suivi étroit par les associés eux-mêmes — fondé sur une connaissance approfondie de son activité et de ses besoins.</p>
+      <p>Au sein de notre cabinet, chaque client bénéficie d'un suivi étroit par les associés eux-mêmes — fondé sur une connaissance approfondie de son activité et de ses besoins.</p>
       <a class="pill pill-navy" href="#contact">Parlons-en</a>
     </div>
     <div class="why-grid">
@@ -502,7 +508,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
     <div>
       <div class="brand">Arbel &amp; Co.</div>
       <div class="en">ARBEL &amp; CO. · CPA</div>
-      <div style="max-width:300px">Cabinet d'expertise comptable à taille humaine — audit, fiscalité et conseil. Service en hébreu, en anglais et en français.</div>
+      <div style="max-width:300px">Cabinet d'expertise comptable professionnel — audit, fiscalité et conseil. Service en hébreu, en anglais et en français.</div>
     </div>
     <nav aria-label="Navigation de pied de page"><h4>Navigation</h4><a href="#services">Services</a><a href="#about">À propos</a><a href="#partners">Associés</a><a href="#contact">Contact</a></nav>
     <div><h4>Coordonnées</h4><div dir="ltr">054-6656745 · 076-5407698</div><div><a href="https://wa.me/972546656745" target="_blank" rel="noopener">WhatsApp</a></div><div dir="ltr">david@arbelandco.com</div><div dir="ltr">sharon@arbelandco.com</div><div>Tour B.S.R. 4, 4e étage<br>7 rue Metsada, Bnei Brak</div></div>

@@ -259,12 +259,18 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 
 
 
+
+
+
+
 /* Language switcher */
 .lang{display:inline-flex;align-items:center;gap:2px;margin-inline-start:10px;padding:3px;border:1px solid var(--line);border-radius:999px}
 .lang a{font-size:13px;font-weight:600;padding:6px 10px;border-radius:999px;color:var(--navy-2);text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
 .lang a:hover{background:var(--bg-soft)}
 .lang a[aria-current="true"]{background:var(--navy-2);color:#fff}
-@media (max-width:900px){.lang{align-self:flex-start;margin:10px 0 0}}
+.lang-m{display:none}
+@media (max-width:900px){.nav .lang{display:none}.lang-m{display:inline-flex;margin:0 0 0 0;margin-inline-start:auto}.hdr .wrap{gap:12px}}
+/* end switcher */
 
 .credit{opacity:.85}
 .ftr .bottom a.credit-link{margin:0;color:#8EC0EA;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(142,192,234,.4)}
@@ -276,6 +282,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
 <header class="hdr" id="hdr">
   <div class="wrap">
     <a class="logo" href="#top" aria-label="ארבל ושות׳ – לראש הדף"><img src="logo.png" alt="ארבל ושות׳ – לוגו"></a>
+    <div class="lang lang-m" role="group" aria-label="Language / שפה / Langue"><a href="index.html" lang="he" hreflang="he" data-nav aria-current="true">עב</a><a href="en.html" lang="en" hreflang="en" data-nav>EN</a><a href="fr.html" lang="fr" hreflang="fr" data-nav>FR</a></div>
     <button class="menu-btn" type="button" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mainnav">
       <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -327,7 +334,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
     <div class="wrap">
     <div class="hero-kicker">ארבל ושות׳ · רואי חשבון</div>
     <h1>ראיית חשבון, מיסוי<br>וליווי עסקי</h1>
-    <p>משרד בוטיק לראיית חשבון, מיסוי וליווי עסקי — מתוך היכרות מעמיקה עם הלקוחות ועם הצרכים העסקיים שלהם. שירות בעברית, באנגלית ובצרפתית.</p>
+    <p>משרד מקצועי לראיית חשבון, מיסוי וליווי עסקי — מתוך היכרות מעמיקה עם הלקוחות ועם הצרכים העסקיים שלהם. שירות בעברית, באנגלית ובצרפתית.</p>
     <div class="hero-ctas">
       <a class="pill pill-sky" href="#contact">לתיאום פגישה</a>
       <a class="pill pill-ghost" href="tel:+972546656745" dir="ltr"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg> 054-6656745</a>
@@ -339,8 +346,8 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
   <div class="wrap">
     <div class="intro-text" data-reveal>
       <div class="eyebrow">אודות המשרד</div>
-      <h2>ארבל ושות׳ – משרד בוטיק לראיית חשבון</h2>
-      <p>ארבל ושות׳ הוא משרד רואי חשבון בוטיק שהוקם בשנת 2012 על ידי רו״ח דוד ארבל, ומשנת 2014 מנוהל בשותפות עם רו״ח שרון ארבל. הצוות מחויב לרמת מקצועיות בלתי מתפשרת לצד יחס אישי ואמין, מתוך היכרות מעמיקה עם כל לקוח ועם הצרכים העסקיים שלו.</p>
+      <h2>ארבל ושות׳ – משרד מקצועי לראיית חשבון</h2>
+      <p>ארבל ושות׳ הוא משרד מקצועי לראיית חשבון שהוקם בשנת 2012 על ידי רו״ח דוד ארבל, ומשנת 2014 מנוהל בשותפות עם רו״ח שרון ארבל. הצוות מחויב לרמת מקצועיות בלתי מתפשרת לצד יחס אישי ואמין, מתוך היכרות מעמיקה עם כל לקוח ועם הצרכים העסקיים שלו.</p>
       <p>המשרד מעניק שירותי ביקורת, חשבות, הנהלת חשבונות ושכר, ליווי עסקי, ייעוץ ותכנון מס, גילוי מרצון וחוות דעת מקצועיות — לחברות ולעסקים קטנים ובינוניים בישראל ובחו״ל, ולאנשים פרטיים.</p>
       <p>למשרד ניסיון רב בליווי תושבי חוץ, עולים חדשים ובני הקהילה דוברת הצרפתית בישראל, עם שירות מלא באנגלית ובצרפתית.</p>
       <p>צרו קשר בטלפון <strong dir="ltr">054-6656745</strong> או <a href="https://wa.me/972546656745" target="_blank" rel="noopener">שלחו הודעה בוואטסאפ</a> ונחזור אליכם.</p>
@@ -414,7 +421,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
     <div class="why-head" data-reveal="right">
       <div class="eyebrow">למה ארבל ושות׳</div>
       <h2>מקצועיות ללא פשרות, יחס אישי לכל לקוח</h2>
-      <p>כמשרד בוטיק, כל לקוח מקבל ליווי צמוד מהשותפים עצמם — מתוך היכרות מעמיקה עם העסק ועם הצרכים שלו.</p>
+      <p>במשרד שלנו, כל לקוח מקבל ליווי צמוד מהשותפים עצמם — מתוך היכרות מעמיקה עם העסק ועם הצרכים שלו.</p>
       <a class="pill pill-navy" href="#contact">דברו איתנו</a>
     </div>
     <div class="why-grid">
@@ -491,7 +498,7 @@ details p{margin:0 0 20px;color:var(--muted);font-size:16.5px}
     <div>
       <div class="brand">ארבל ושות׳</div>
       <div class="en">ARBEL &amp; CO. · CPA</div>
-      <div style="max-width:300px">משרד בוטיק לראיית חשבון — ביקורת, מיסוי וליווי עסקי. שירות בעברית, באנגלית ובצרפתית.</div>
+      <div style="max-width:300px">משרד מקצועי לראיית חשבון — ביקורת, מיסוי וליווי עסקי. שירות בעברית, באנגלית ובצרפתית.</div>
     </div>
     <nav aria-label="ניווט תחתון"><h4>ניווט</h4><a href="#services">שירותים</a><a href="#about">אודות</a><a href="#partners">שותפים</a><a href="#contact">צור קשר</a></nav>
     <div><h4>פרטי התקשרות</h4><div dir="ltr" style="text-align:right">054-6656745 · 076-5407698</div><div><a href="https://wa.me/972546656745" target="_blank" rel="noopener">וואטסאפ</a></div><div dir="ltr" style="text-align:right">david@arbelandco.com</div><div dir="ltr" style="text-align:right">sharon@arbelandco.com</div><div>מגדל ב.ס.ר. 4, קומה 4<br>רח׳ מצדה 7, בני ברק</div></div>
